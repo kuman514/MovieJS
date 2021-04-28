@@ -5,6 +5,10 @@ class App {
       document.getElementById('load-file'),
       document.querySelector('video')
     );
+    this.loopControl = new LoopButton(
+      document.getElementById('repeat'),
+      document.querySelector('video')
+    );
   }
 }
 
