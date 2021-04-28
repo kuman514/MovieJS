@@ -1,0 +1,17 @@
+.control-panel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+input[type=file] {
+  color: white;
+}
+
+input[type=file]:hover {
+  cursor: pointer;
+}
+
+button:hover {
+  cursor: pointer;
+}
