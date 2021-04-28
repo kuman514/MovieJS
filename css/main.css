@@ -27,3 +27,29 @@ video {
   width: 100vw;
   height: 90vh;
 }
+
+.expand-req {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  display: none;
+}
+
+@media (max-width: 400px) {
+  main {
+    display: none;
+  }
+  .expand-req {
+    display: flex;
+  }
+}
+
+@media (max-height: 240px) {
+  main {
+    display: none;
+  }
+  .expand-req {
+    display: flex;
+  }
+}
