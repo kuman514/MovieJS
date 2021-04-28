@@ -5,13 +5,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>웹 동영상 플레이어</title>
+
+    <script src="js/fileloader.js"></script>
+    <script src="js/app.js"></script>
   </head>
   <body>
     <main>
       <div class="movie-area">
-        <video src=""></video>
+        <video src="sample/damedane.mp4" controls></video>
         <div class="movie-file-load">
           <!-- 비디오 불러오는 버튼 -->
+          <input type="file" id="load-file">
         </div>
       </div>
       <div class="bottom-notification">
