@@ -1,6 +1,6 @@
 # MovieJS
 VanillaJS를 이용하여 만든, 웹 동영상 플레이어 앱입니다.   
-[앱 사용해보기](https://kuman514.github.io/MovieJS/)
+[앱 사용해보기](https://kuman514.github.io/MovieJS/index.html)
 
 # Features (구현 요소)
 - HTML5의 `<video>` 태그를 이용한 비디오 재생 컨트롤
