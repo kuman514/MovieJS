@@ -12,6 +12,14 @@ input[type=file]:hover {
   cursor: pointer;
 }
 
+.youtube-mode {
+  color: white;
+}
+
 button:hover {
   cursor: pointer;
+}
+
+.hidden {
+  display: none;
 }

@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="css/control.css">
     <link rel="stylesheet" href="css/notification.css">
 
+    <script src="js/modemanager.js"></script>
     <script src="js/fileloader.js"></script>
     <script src="js/loopbutton.js"></script>
     <script src="js/mirror.js"></script>
@@ -20,12 +21,27 @@
       <div class="movie-area">
         <div class="video-area">
           <video src="sample/damedane.mp4" controls autoplay></video>
+          <iframe class="youtube-embed hidden" src="https://www.youtube.com/embed/jUqRAUxip4U?autoplay=1" allowfullscreen="allowfullscreen" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"></iframe>
         </div>
         <div class="control-panel">
-          <!-- 비디오 불러오기 -->
-          <input type="file" id="load-file" accept=".avi, .mp4, .mkv">
-          <!-- 반복재생 활성화 -->
-          <button id="repeat">반복 재생</button>
+          <!-- 모드 변경 -->
+          <div class="mode-changer">
+            <button id="change-mode">유튜브 모드로 전환</button>
+          </div>
+
+          <!-- 로컬 모드 -->
+          <div class="local-video-mode">
+            <!-- 비디오 불러오기 -->
+            <input type="file" id="load-file" accept=".avi, .mp4, .mkv">
+            <!-- 반복재생 활성화 -->
+            <button id="repeat">반복 재생</button>
+          </div>
+
+          <!-- 유튜브 모드 -->
+          <div class="youtube-mode hidden">
+            유튜브 모드 준비 중...
+          </div>
+
           <!-- 가로 뒤집기 -->
           <button id="mirror-x">가로 뒤집기</button>
           <!-- 세로 뒤집기 -->
