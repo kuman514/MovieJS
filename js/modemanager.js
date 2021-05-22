@@ -16,6 +16,7 @@ class ModeManager {
       switch (this.mode) {
         case 'local':
           // convert local -> youtube
+          this.localVideo.pause();
           this.localPanel.classList.add('hidden');
           this.localVideo.classList.add('hidden');
           this.ytPanel.classList.remove('hidden');
