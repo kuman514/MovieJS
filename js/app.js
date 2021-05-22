@@ -24,6 +24,11 @@ class App {
     );
 
     // YouTube URL reader
+    this.ytLoader = new YTLoader(
+      document.getElementById('load-youtube-url'),
+      document.getElementById('youtube-call'),
+      this.ytVideo
+    );
 
     // Common mirror
     this.mirror = new Mirror(

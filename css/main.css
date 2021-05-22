@@ -23,7 +23,7 @@ main {
   object-fit: contain;
 }
 
-video {
+video, iframe {
   width: 100vw;
   height: 90vh;
 }
