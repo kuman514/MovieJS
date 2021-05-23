@@ -5,7 +5,6 @@ class FileLoader {
 
     this.element.addEventListener('change', () => {
       const selected = URL.createObjectURL(this.element.files[0]);
-      console.log(selected);
       this.video.src = selected;
     });
   }
