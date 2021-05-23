@@ -13,6 +13,7 @@ VanillaJS를 이용하여 만든, 웹 동영상 플레이어 앱입니다.
 - 04-28-2021: 기본 기능 구현, 반복 재생 구현
 - 04-29-2021: 레이아웃 개선
 - 04-30-2021: 가로 뒤집기, 세로 뒤집기 기능 추가
+- 05-23-2021: 유튜브 모드 추가
 
 # Resources (리소스)
 - 샘플 동영상 출처: [Dame Da Ne Meme Generator](https://animalface.site/damedane.html)
