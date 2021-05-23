@@ -11,6 +11,9 @@ class ModeManager {
     // youtube elements
     this.ytPanel = ytPanel;
     this.ytVideo = ytVideo;
+    this.stopAndReload = () => {
+      this.ytVideo.src = this.ytVideo.src.split('?')[0];
+    };
 
     this.changeBtn.addEventListener('click', () => {
       switch (this.mode) {
@@ -27,6 +30,7 @@ class ModeManager {
           break;
         case 'youtube':
           // convert youtube -> local
+          this.stopAndReload();
           this.ytPanel.classList.add('hidden');
           this.ytVideo.classList.add('hidden');
           this.localPanel.classList.remove('hidden');
