@@ -4,23 +4,26 @@ class YTLoader {
     this.loadButton = loadButton;
     this.video = video;
 
-    this.loadURL = () => {
+    this.loadURL = (id) => {
+      this.video.src = `https://www.youtube.com/embed/${id}?autoplay=1`;
+    }
+
+    this.parseURL = (getURL) => {
       // Get youtube ID directly
-      if (this.urlInput.value && this.urlInput.value.length === 11) {
-        const id = this.urlInput.value;
-        this.video.src = `https://www.youtube.com/embed/${id}?autoplay=1`;
+      if (getURL && getURL.length === 11) {
+        this.loadURL(getURL);
       }
 
       // Or parse youtube link
       const regex = /^.*((youtu.be\/)|(v\/)|(\/u\/\w\/)|(embed\/)|(watch\?))\??v?=?([^#&?]*).*/;
-      const match = this.urlInput.value.match(regex);
-      console.log(match[7]);
-      if (match && match[7].length === 11) {
-        const id = match[7];
-        this.video.src = `https://www.youtube.com/embed/${id}?autoplay=1`;
+      const match = getURL.match(regex);
+      if (match && match[7] && match[7].length === 11) {
+        this.loadURL(match[7]);
       }
     }
 
-    this.loadButton.addEventListener('click', this.loadURL);
+    this.loadButton.addEventListener('click', () => {
+      this.parseURL(this.urlInput.value);
+    });
   }
 }
